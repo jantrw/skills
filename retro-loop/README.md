@@ -1,6 +1,6 @@
 # retro-loop
 
-`retro-loop` turns findings from Matt Pocock's `retro` skill into changes you can approve and verify. Coding agents can repeat the same mistakes across sessions, and adding a rule to `AGENTS.md` every time makes it harder to see which rules matter. `retro-loop` checks the evidence, looks for the cause, and prefers a fix that can catch the mistake again, such as wiring an existing check into CI.
+`retro-loop` turns proposals from Matt Pocock's `retro` skill into changes you can approve and verify. It checks the evidence and explains what each proposal would change and how you would verify it. If a proposal leaves a gap or reaches too far, `retro-loop` looks for a lasting fix, such as wiring an existing check into CI to catch the same mistake in future sessions.
 
 You decide what changes. You can also ask the agent to reproduce a failure in isolation and check that the proposed fix catches it before it touches your project.
 
