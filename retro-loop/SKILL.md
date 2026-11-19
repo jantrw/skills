@@ -19,7 +19,7 @@ Start with the proposals from the completed `retro` run, which uses `writing-for
 
 The main agent owns user communication and scope decisions. If the host supports delegation and the user authorizes it, use subagents only for read-only evidence gathering or review. Use a read-only role or sandbox where available. Keep write authority and approval handling with the main agent.
 
-**Stop after presenting the proposals.** Ask the user to accept, reject, or request a revision for each ID. Approval binds the selected solution and its stated scope. Record decisions in the conversation. An unresolved or ambiguous decision keeps this phase open. Present any revision for a new decision before applying it. If there are no accepted improvements once decisions are settled, report the outcome and end.
+**Stop after presenting the proposals.** Ask the user to accept, reject, or request a revision for each proposal. Accept decisions in plain language when the intended proposals and actions are clear. Approval binds the selected solution and its stated scope. Record decisions in the conversation. An unresolved or ambiguous decision keeps this phase open. Present any revision for a new decision before applying it. If there are no accepted improvements once decisions are settled, report the outcome and end.
 
 ## 3. Ask for a separate simulation decision
 
@@ -28,12 +28,14 @@ After settling the proposals, ask:
 > Which accepted improvements should be simulated before final implementation?
 >
 > A) Simulate all accepted improvements individually.
-> B) Simulate selected improvements. Specify IDs, names, or descriptions.
+> B) Simulate selected improvements. Tell me which ones.
 > C) Skip simulation and implement the accepted improvements directly.
+>
+> You can answer in your own words.
 
-**End the turn and wait for an explicit answer to this question.** Proposal approval grants no simulation permission. For B, resolve the selection unambiguously against the accepted proposals. A missing or unclear reply authorizes no action.
+**End the turn and wait for an explicit answer to this question.** Proposal approval grants no simulation permission. Accept the user's choice in plain language or by letter. Resolve partial selections using IDs, names, descriptions, or clear references such as “simulate only the first two accepted proposals.” Follow an explicit correction such as “B, but skip simulation” as a decision to skip. Ask for clarification and wait if the choice is missing, the selection is unclear, or conflicting instructions leave the intent unresolved.
 
-For A or B, read [simulation](references/simulation.md) and follow its outcome and retry rules for each selected improvement. For C, or for accepted improvements outside the B selection, proceed to implementation.
+For accepted improvements selected for simulation, read [simulation](references/simulation.md) and follow its outcome and retry rules. Proceed directly to implementation for accepted improvements outside the simulation selection or when the user explicitly skips simulation.
 
 ## 4. Implement, verify, and close
 

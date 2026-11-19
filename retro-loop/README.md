@@ -22,23 +22,21 @@ npx skills@latest add mattpocock/skills --skill retro --skill writing-for-agents
 npx skills@latest add jantrw/skills --skill retro-loop
 ```
 
-Choose your coding agent when prompted.
+Choose the same Agent Skills-compatible coding agent for both installations when prompted.
 
 ### 3. Run both skills in the same conversation
 
-1. Invoke `$retro` in Codex, or use your agent's skill selector. Wait for the retrospective report.
-2. Invoke `$retro-loop` in the **same conversation**. It requires the completed `retro` run and its findings.
+1. Invoke the `retro` skill using your agent's skill selector or invocation syntax. Wait for the retrospective report.
+2. Invoke `retro-loop` in the **same conversation**. It requires the completed `retro` run and its findings.
 
 ## Approve changes and choose what to simulate
 
-The agent presents numbered proposals with evidence, scope, and verification steps. Reply with a decision for each proposal, for example, “Accept #1, reject #2, and revise #3.”
+The agent presents numbered proposals with evidence, scope, and verification steps. Accept, reject, or request a revision for each proposal in your own words. You can refer to a proposal by ID, name, or a clear description.
 
-Once those decisions are settled, the agent asks which accepted proposals to simulate:
+Once those decisions are settled, the agent asks which accepted proposals to simulate. The option letters are shortcuts. Plain-language replies work too.
 
-| Option | What happens |
-| --- | --- |
-| **A** | Simulate every accepted proposal separately. |
-| **B** | Simulate the accepted proposals you select, for example, “B, #1.” |
-| **C** | Implement the accepted proposals directly and run the agreed checks. |
+- “Simulate all the approved proposals.”
+- “Simulate just the first two we approved.”
+- “Skip simulation and implement the approved changes.”
 
 The agent applies only approved changes. If a simulation fails, the affected proposal stays out of the project and the agent asks before revising or retrying. The final report records what changed, what was verified, and what remains open. See [SKILL.md](SKILL.md) for the workflow.

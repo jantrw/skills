@@ -38,4 +38,4 @@ End with the decision table. Use one row per finding, including any recommendati
 |----|---------|----------------------|--------|------|----------|
 | 1 | … | … | … | … | Pending |
 
-Ask for a decision per ID, for example, “Accept #1 as proposed, reject #2, and revise #3.” If the user selects an alternative whose scope is underspecified, spell it out and ask for approval.
+Ask for a decision on each proposal. If the user selects an alternative whose scope is underspecified, spell it out and ask for approval.
