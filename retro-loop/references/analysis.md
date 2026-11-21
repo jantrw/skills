@@ -14,7 +14,7 @@ Account for every finding and its proposed remedy in the completed retro, includ
    4. Adjust a skill.
    5. Adjust project documentation.
    6. Adjust `AGENTS.md` or equivalent always-loaded context only when the other remedies cannot cover the need. Check first whether removing or correcting an existing rule solves the problem.
-   Weigh coverage, effort, maintenance, and effects on other workflows. Prefer existing components and one source of truth. Compare trade-offs when a materially different alternative is viable. If the cause or remedy cannot be substantiated, propose deferring the change or gathering specific evidence.
+      Weigh coverage, effort, maintenance, and effects on other workflows. Prefer existing components and one source of truth. Compare trade-offs when a materially different alternative is viable. If the cause or remedy cannot be substantiated, propose deferring the change or gathering specific evidence.
 
 Order findings by recurrence risk, impact, and expected benefit. Assign stable IDs. Label recommendations and alternatives so the human can select one. Specify enough scope for approval, including affected files or components, changes to behavior, and any needed workspace setup.
 
@@ -34,8 +34,8 @@ Order findings by recurrence risk, impact, and expected benefit. Assign stable I
 
 End with the decision table. Use one row per finding, including any recommendation to defer.
 
-| ID | Finding | Recommended solution | Effort | Risk | Decision |
-|----|---------|----------------------|--------|------|----------|
-| 1 | … | … | … | … | Pending |
+| ID  | Finding | Recommended solution | Effort | Risk | Decision |
+| --- | ------- | -------------------- | ------ | ---- | -------- |
+| 1   | …       | …                    | …      | …    | Pending  |
 
 Ask for a decision on each proposal. If the user selects an alternative whose scope is underspecified, spell it out and ask for approval.
