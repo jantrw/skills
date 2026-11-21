@@ -5,6 +5,10 @@ description: Refine proposals from Matt Pocock's retro skill and turn them into 
 
 # Retro Loop
 
+## Hand off blocked work
+
+When you already know you cannot carry out all or part of a proposed fix, say why in the proposal and identify the specific action the user would need to take. If you discover a blocker during implementation, explain it when you find it. Once the fix is cleared for implementation, explicitly ask the user to carry out any blocked step they can perform and explain how to verify it. If the user only needs to unblock you, ask for that prerequisite so you can finish the fix. Report the affected work as pending until there is evidence it was completed.
+
 ## 1. Check the prerequisite
 
 Run this workflow only on the user's explicit invocation. Require a completed run of Matt Pocock's `retro` skill earlier in the **current conversation** and its findings for the coding session in scope. The coding session reviewed by `retro` can be a different session.
