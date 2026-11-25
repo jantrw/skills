@@ -30,19 +30,26 @@ npx skills@latest add jantrw/skills --all -g
 
 `--all` selects every skill and all agents that support global installation.
 
-### Install skills interactively
+<details>
+<summary>Install skills interactively</summary>
 
 ```sh
 npx skills@latest add jantrw/skills
 ```
 
-### Install one skill interactively
+</details>
+
+<details>
+<summary>Install one skill interactively</summary>
 
 ```sh
 npx skills@latest add jantrw/skills --skill retro-loop
 ```
 
 Replace `retro-loop` with the name of the skill you want.
+
+</details>
+
 <details>
 <summary>Install all skills globally and choose the target agents</summary>
 
