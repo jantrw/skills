@@ -2,9 +2,50 @@
 
 Reusable skills for coding agents.
 
-## Installation (30-second setup)
+## Install skills
 
-🚧
+Requires Node.js 22.20 or later. Run the interactive commands in your terminal.
+
+### Install all skills globally with prompts
+
+```sh
+npx skills@latest add jantrw/skills --skill "*" -g
+```
+
+### Install one skill with prompts
+
+```sh
+npx skills@latest add jantrw/skills --skill retro-loop
+```
+
+Replace `retro-loop` with the name of the skill you want.
+
+<details>
+<summary>Choose skills and installation scope interactively</summary>
+
+```sh
+npx skills@latest add jantrw/skills
+```
+
+</details>
+
+<details>
+<summary>Install all skills globally without prompts</summary>
+
+```sh
+npx skills@latest add jantrw/skills --all -g
+```
+
+</details>
+
+<details>
+<summary>List available skills</summary>
+
+```sh
+npx skills@latest add jantrw/skills --list
+```
+
+</details>
 
 ## Contributing
 
