@@ -30,7 +30,7 @@ npx skills@latest add jantrw/skills --all -g
 
 `--all` selects every skill and all agents that support global installation.
 
-### Install with prompts
+### Install skills interactively
 
 ```sh
 npx skills@latest add jantrw/skills
