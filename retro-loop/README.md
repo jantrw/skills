@@ -1,6 +1,6 @@
 # retro-loop
 
-`retro-loop` turns proposals from Matt Pocock's `retro` skill into changes you can approve and verify. It checks the evidence and explains what each proposal would change and how you would verify it. If a proposal leaves a gap or reaches too far, `retro-loop` looks for a lasting fix, such as wiring an existing check into CI to catch the same mistake in future sessions.
+`retro-loop` turns proposals from Matt Pocock's `retro` skill into changes you can approve and verify. It checks the evidence, identifies where the same cause could lead to another failure, and explains how you would verify that each proposed change covers both cases.
 
 You decide what changes. You can also ask the agent to reproduce a failure in isolation and check that the proposed fix catches it before it touches your project.
 
@@ -31,7 +31,7 @@ Choose the same Agent Skills-compatible coding agent for both installations when
 
 ## Approve changes and choose what to simulate
 
-The agent presents numbered proposals with evidence, scope, and verification steps. Accept, reject, or request a revision for each proposal in your own words. You can refer to a proposal by ID, name, or a clear description.
+The agent presents numbered proposals with evidence, scope, and verification steps. Accept, reject, or request a revision for each proposal in your own words. You can refer to a proposal by number or description.
 
 Once those decisions are settled, the agent asks which accepted proposals to simulate. The option letters are shortcuts. Plain-language replies work too.
 
