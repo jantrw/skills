@@ -6,12 +6,12 @@ For each isolated run:
 
 1. Define the failure, the expected signal, and the checks for likely side effects.
 2. Reproduce the original failure on the unfixed baseline where feasible. Record setup, commands, and observed behavior. If reproduction is infeasible, identify the missing evidence and any comparable baseline that supports a conclusion.
-3. Apply the accepted change inside the isolated environment. Repeat the scenario under comparable conditions and run the side-effect checks.
+3. Apply the accepted change inside the isolated environment. Repeat the original scenario under comparable conditions, check the second case from the accepted proposal, and run the side-effect checks.
 4. Record what changed, what was observed, and what the evidence supports.
 
 | Result           | Criterion                                                                                                                                         |
 | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Passed**       | The failure was prevented or reliably detected, supported by meaningful evidence.                                                                 |
+| **Passed**       | Meaningful evidence shows the change prevented or reliably detected the failure in both cases.                                                    |
 | **Failed**       | The failure still occurred without effective prevention or detection, and the expected improvement was absent, or the change caused a regression. |
 | **Partial**      | The change reduced the problem but left a material failure path or inconsistent detection.                                                        |
 | **Unverifiable** | Setup, reproduction, or available evidence could not support a conclusion.                                                                        |

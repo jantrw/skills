@@ -10,7 +10,7 @@ Run the agreed verification in the project context. Check the actual diff, the p
 
 Give every finding a row. Distinguish implementation status from simulation status and verification. Include rejected, deferred, blocked, and unverified findings.
 
-| ID  | Finding | Solution | Implemented | Simulated | Result                                       |
+| No. | Finding | Solution | Implemented | Simulated | Result                                       |
 | --- | ------- | -------- | ----------- | --------- | -------------------------------------------- |
 | 1   | …       | …        | Yes         | Yes       | Passed in simulation and verified in project |
 | 2   | …       | …        | Yes         | No        | Not simulated. Project verification passed   |
