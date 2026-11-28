@@ -1,8 +1,12 @@
 # retro-loop
 
-`retro-loop` turns proposals from Matt Pocock's `retro` skill into changes you can approve and verify. It checks the evidence, identifies where the same cause could lead to another failure, and explains how you would verify that each proposed change covers both cases.
+`retro-loop` improves the environment your coding agent works in. It helps remove bottlenecks such as **conflicting instructions, inefficient tool calls, and unreliable verification steps**. Future sessions can spend more of their time and context on the task.
 
-You decide what changes. You can also ask the agent to reproduce a failure in isolation and check that the proposed fix catches it before it touches your project.
+Start with the findings from Matt Pocock's `retro` skill. Retro Loop checks them against the session evidence. You can also ask the agent to try an approved fix in isolation before it touches your project.
+
+## Find and fix token leaks
+
+Token leaks are recurring sources of unnecessary token use, such as duplicate always-loaded instructions or large tool outputs the agent never needs. Retro Loop looks for evidence of that waste in the session and proposes a fix at the source.
 
 ## Quick start
 
